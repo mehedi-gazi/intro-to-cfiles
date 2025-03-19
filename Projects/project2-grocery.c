@@ -1,23 +1,26 @@
-#include <stdio.h>
+// Project 2 - Grocery Store II -
 
-int main() {
+#include <stdio.h> // Include Libraries
+
+int main() { // Insert Main Script
   
- int appleQuantity;
+ int appleQuantity; // Assigning Values
  double applePrice = 1.49;
  double appleReview;
  int appleReviewDisplay;
  const char appleLocation = 'F';
  int dayOfWeek = 0;
 
- appleQuantity = 23;
- appleReview = 823/9;
- appleReview = (823 + 52)/10;
- appleReviewDisplay = appleReview;
+ // Operators, to assign and subtract/divide
+ appleQuantity = 23; // Assigns new value.
+ appleReview = 823/9; // Divides 823 / 9
+ appleReview = (823 + 52)/10; // Brackets / incrementation - decremendation are prioritised over just normal addition / subtraction and division/multiplication
+ appleReviewDisplay = appleReview; // Updates the the display and Review
 
- dayOfWeek += 3;
+ dayOfWeek += 3; // Updates the current day of Week from 0 to 3
 
 
- if(dayOfWeek % 7 == 3 || appleQuantity < 10)
+ if (dayOfWeek % 7 == 3 || appleQuantity < 10) // If statement, outlining if the conditions are met, in this case it checks if the dayofWeek currently is 3, by using 3 modulo 7, and if the result is 3, then it also checks using a || (OR) statement to see if the apple Quantity is 
  {
   printf("Sale on apples today, today only they are: $%.2f\n", applePrice * .9);
  }

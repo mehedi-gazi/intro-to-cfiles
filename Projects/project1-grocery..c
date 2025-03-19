@@ -1,12 +1,14 @@
-#include <stdio.h>
+// Project 1 - Grocery Store - Libraries / Data Types (Updating and Conversions) / Assignment and constants.
 
-int main() {
+#include <stdio.h> // Initialise Libraries
 
-  int appleQuantity = 23;
+int main() { // Main Script to Enter
+
+  int appleQuantity = 23; // Integer number (no decimals)
   double applePrice = 1.49; // Financials - Different currencies
-  float appleReview = 82.5;
-  int appleReviewDisplay;
-  const char appleLocation = 'F';
+  float appleReview = 82.5; // Decimals, double -> to expand it
+  int appleReviewDisplay; // Assigning the int to display the integer value of the review
+  const char appleLocation = 'F'; // Const (Not changed) character for the location of Apples
 
   appleReviewDisplay = (int)appleReview; // Convert the float to an int for display purposes
   
