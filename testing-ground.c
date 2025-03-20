@@ -1,18 +1,15 @@
 #include <stdio.h>
- 
+
 int main() {
- 
-  double ph = 7.9;
-  ph = 4.6;
-  ph = 7;
 
-  // Start the if, else if, else here:
-  if (ph > 7){
-    printf("Basic\n");
-  } else if (ph < 7){
-    printf("Acidic\n");
-  } else {
-    printf("Neutral\n");
-  }
+  int a = 10;
+  int b = 5;
+  int min;
 
+  // Print out the smaller number with return
+  min = a < b ? a : b;
+  printf("%d\n", min);
+
+  // Print out the smaller number without return
+  a < b ? printf("%d\n", a) : printf("%d\n", b);
 }
