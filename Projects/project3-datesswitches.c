@@ -13,48 +13,62 @@ int main(void) {
   // Print the month
   switch (month) {
     case 1:
-        printf("January ");
+        printf("January");
         break;
     case 2:
-        printf("February ");
+        printf("February");
         break;
     case 3:
-        printf("March ");
+        printf("March");
         break;
     case 4:
-        printf("April ");
+        printf("April");
         break;
     case 5:
-        printf("May ");
+        printf("May");
         break;
     case 6:
-        printf("June ");
+        printf("June");
         break;
     case 7:
-        printf("July ");
+        printf("July");
         break;
     case 8:
-        printf("August ");
+        printf("August");
         break;
     case 9:
-        printf("September ");
+        printf("September");
         break;
     case 10:
-        printf("October ");
+        printf("October");
         break;
     case 11:
-        printf("November ");
+        printf("November");
         break;
     case 12:
-        printf("December ");
+        printf("December");
         break;
   }
   
 
   // Print the day
+  printf(" %d", day);
 
 
   // Print the suffix for a given day
+  switch (day) {
+    case 1: case 21: case 31:
+        printf("st, ");
+        break;
+    case 2: case 22:
+        printf("nd, ");
+        break;
+    case 3: case 23:
+        printf("rd, ");
+        break;
+    default:
+        printf("th, ");
+  }
   
 
   // Print the year
