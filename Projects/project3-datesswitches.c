@@ -11,7 +11,7 @@ int main(void) {
   scanf("%d /%d /%d", &month, &day, &year);
 
   // Print the month
-  switch (month) {
+  switch (month) { // Providing the number index based on what the user inputs.
     case 1:
         printf("January");
         break;
@@ -52,26 +52,27 @@ int main(void) {
   
 
   // Print the day
-  printf(" %d", day);
+  printf(" %d", day); // Executes the day format shown in terminal based on the project brief.
 
 
   // Print the suffix for a given day
   switch (day) {
-    case 1: case 21: case 31:
+    case 1: case 21: case 31: // Prints if user input is 1 / 21 / 31 ending in st
         printf("st, ");
         break;
-    case 2: case 22:
+    case 2: case 22: // Prints if user input is 2 / 22 ending in nd
         printf("nd, ");
         break;
-    case 3: case 23:
+    case 3: case 23: // Prints if user input is 3 / 23 ending in rd
         printf("rd, ");
         break;
-    default:
+    default: // all other cases by default is th. (in a month)
         printf("th, ");
   }
   
 
   // Print the year
+  printf("%d.\n", year);
   
   
   return 0;
