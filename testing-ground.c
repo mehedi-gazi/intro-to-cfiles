@@ -2,10 +2,12 @@
 
 int main() {
 
-  int i = 99;
+  for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+      continue;
+    }
+    printf("%d\n", i);
+  }
 
-  // Write your loop here
-  
-
-
+  return 0;
 }
