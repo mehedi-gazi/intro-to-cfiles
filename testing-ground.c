@@ -1,14 +1,21 @@
 #include<stdio.h>
+#include<string.h>
 
 int main() {
-  double arr[] = {1.0, 8, 2.27, 16.2, 2, 3.14, 12.6, 1.62, 6.54, 9, 11};
   
-  // Checkpoint 1 code goes here.
-  int len = sizeof(arr)/sizeof(double);
-  printf("%i\n", len);
+  char src[] = "banana";
+  char dst[7];
+  
+  char pan[] = "How vexingly quick daft zebras jump!";
+  int len = strlen(pan); // Checkpoint 2
+  char dst2[len];
+  
+  // Code for checkpoint 1 goes here
+  strcpy(dst,src);
+  printf("%s\n", dst);  
+  
+  // Code for checkpoint 3 goes here
+  strcpy(dst2, pan);
+  printf("%s", dst2);
 
-  // Checkpoint 2 code goes here.
-  for (int i = 0; i < len; i++) {
-    printf("%i\n", arr[i]);
-  }
 }
