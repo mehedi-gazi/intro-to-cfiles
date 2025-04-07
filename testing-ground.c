@@ -2,20 +2,27 @@
 #include<string.h>
 
 int main() {
-  
-  char src[] = "banana";
-  char dst[7];
-  
-  char pan[] = "How vexingly quick daft zebras jump!";
-  int len = strlen(pan); // Checkpoint 2
-  char dst2[len];
-  
-  // Code for checkpoint 1 goes here
-  strcpy(dst,src);
-  printf("%s\n", dst);  
-  
-  // Code for checkpoint 3 goes here
-  strcpy(dst2, pan);
-  printf("%s", dst2);
+  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  char s[] = "Farmer Jack realized that big yellow quilts were expensive!!";
 
+  // Code for Checkpoint 1 goes here.
+  int* ptr = &arr[9];
+
+  // Code for Checkpoint 2 goes here.
+  for (int i = 0; i < sizeof(arr)/sizeof(int); i++ ) {
+    printf("%i\n", *ptr);
+    ptr--;
+
+  }
+
+  // Code for Checkpoint 3 goes here.
+  char* ptr2 = &s[0];
+
+  // Code for Checkpoint 4 goes here.
+  for (int i = 0; i < strlen(s); i++) {
+    *ptr2 = '#';
+    ptr2++;
+  }
+  
+  printf("%s\n", s);  
 }

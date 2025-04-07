@@ -29,7 +29,6 @@ int main() {
         } else {
             continue;
         }
-        
     }
 
     // Ex6 - Same For Loop and Logic for String 2
