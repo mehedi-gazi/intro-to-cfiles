@@ -1,3 +1,5 @@
+// Project VI - String Copier - Pointers in C (I hate these despisely)
+
 #include<stdio.h>
 #include<string.h>
  

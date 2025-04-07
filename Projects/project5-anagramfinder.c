@@ -1,4 +1,4 @@
-// Project IV - Anagram Finder - Arrays and Strings, Manipulation etc.
+// Project VI - Anagram Finder - Arrays and Strings, Manipulation etc.
 // Inc. Libraries - EX1
 #include <stdio.h>
 #include <string.h>
