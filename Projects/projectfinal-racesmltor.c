@@ -48,7 +48,9 @@ int calculateTimeToCompleteLap () {
     
 }
 
-int updateRaceCar(struct RaceCar* raceCar) {
+void updateRaceCar(struct RaceCar* raceCar) {
+    int lapTime = calculateTimeToCompleteLap();
+    raceCar -> totalLapTime += lapTime;
 };
 
 // Main Script
